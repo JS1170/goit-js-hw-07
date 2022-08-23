@@ -5,7 +5,7 @@ const gallery = document.querySelector('.gallery');
 
 const imgList = galleryItems
   .map(({ preview, original, description }) => {
-    return `<a class="gallery__item" href="${original}}">
+    return `<a class="gallery__item" href="${original}">
     <img
       class="gallery__image"
       src="${preview}"
@@ -21,6 +21,4 @@ console.log(SimpleLightbox);
 
 function handleClick(event) {
   event.preventDefault();
-
- 
 }
